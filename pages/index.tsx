@@ -2,9 +2,33 @@ import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-red-500">
-      <h1 className="text-black-500">It Works</h1>
-      <h2 className="text-blue-500">It Works</h2>
+    <div className='bg-slate-400 py-20 px-10 grid gap-10'>
+      <div className='bg-white p-6 rounded-3xl shadow-xl'>
+        <span className='font-semibold text-3xl'>Select Item</span>
+
+        <div className='flex justify-between my-2'>
+          <span className='text-gray-500'>Grey Chair</span>
+          <span className='font-bold'>$19</span>
+        </div>
+
+        <div className='flex justify-between my-2'>
+          <span className='text-gray-500'>Tooly Chair</span>
+          <span className='font-bold'>$81</span>
+        </div>
+
+        <div className='flex justify-between mt-2 pt-2 border-t-2 border-dashed'>
+          <span>Total</span>
+          <span className='font-extrabold'>$100</span>
+        </div>
+
+        <div className='mt-5 bg-blue-500 text-white p-2 text-center rounded-xl cursor-pointer w-2/4 mx-auto'>Checkout</div>
+      </div>
+
+      <div className='bg-white p-10 rounded-2xl shadow-xl'></div>
+
+      <div className='bg-white p-10 rounded-2xl shadow-xl'></div>
+
+      <div className='bg-white p-10 rounded-2xl shadow-xl'></div>
     </div>
   );
 };
