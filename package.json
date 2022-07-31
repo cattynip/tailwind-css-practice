@@ -1,8 +1,8 @@
 {
-  "name": "narrot-market",
-  "description": "The Carrot Market Clone Coding",
+  "name": "Tailwind-css-practice",
+  "description": "Tailwind CSS Practice",
   "version": "0.1.0",
-  "author": "Novelier-Webbelier<novelier.webbelier@gmail.com>",
+  "author": "tenacious-novel<tenacious.novel@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "next dev",
