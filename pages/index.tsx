@@ -2,86 +2,94 @@ import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-slate-400 py-20 px-10 grid gap-10 min-h-screen'>
-      <div className='bg-white p-6 rounded-3xl shadow-xl'>
-        <span className='font-semibold text-3xl'>Select Item</span>
+    <div className="grid min-h-screen gap-10 bg-slate-400 py-20 px-10">
+      <div className="flex flex-col rounded-3xl bg-white p-6 shadow-xl">
+        <span className="text-3xl font-semibold">Select Item</span>
 
-        <div className='flex justify-between my-2'>
-          <span className='text-gray-500'>Grey Chair</span>
-          <span className='font-bold'>$19</span>
+        <div className="my-2 flex justify-between">
+          <span className="text-gray-500">Grey Chair</span>
+          <span className="font-bold">$19</span>
         </div>
 
-        <div className='flex justify-between my-2'>
-          <span className='text-gray-500'>Tooly Chair</span>
-          <span className='font-bold'>$81</span>
+        <div className="my-2 flex justify-between">
+          <span className="text-gray-500">Tooly Chair</span>
+          <span className="font-bold">$81</span>
         </div>
 
-        <div className='flex justify-between mt-2 pt-2 border-t-2 border-dashed'>
+        <div className="mt-2 flex justify-between border-t-2 border-dashed pt-2">
           <span>Total</span>
-          <span className='font-extrabold'>$100</span>
+          <span className="font-extrabold">$100</span>
         </div>
 
-        <div className='mt-5 bg-blue-500 text-white p-2 text-center rounded-xl cursor-pointer w-2/4 mx-auto'>Checkout</div>
+        <button className="mx-auto mt-5 w-3/4 cursor-pointer rounded-xl bg-blue-500 p-2 text-center text-white transition-colors hover:bg-teal-500 focus:outline-none active:bg-yellow-500">
+          Checkout
+        </button>
       </div>
 
-      <div className='bg-white overflow-hidden rounded-2xl shadow-xl'>
-        <div className='bg-blue-500 p-6 pb-14'>
-          <span className='text-white text-2xl'>Profile</span>
+      <div className="overflow-hidden rounded-2xl bg-white shadow-xl">
+        <div className="bg-blue-500 p-6 pb-14">
+          <span className="text-2xl text-white">Profile</span>
         </div>
-        <div className='bg-white rounded-3xl px-7 pt-9 relative -top-5'>
-          <div className='flex relative -top-20 justify-between items-end'>
-            <div className='flex flex-col items-center'>
-              <span className='text-sm text-gray-500'>Orders</span>
-              <span className='font-medium'>340</span>
+        <div className="relative -top-5 rounded-3xl bg-white px-7 pt-9">
+          <div className="relative -top-20 flex items-end justify-between">
+            <div className="flex flex-col items-center">
+              <span className="text-sm text-gray-500">Orders</span>
+              <span className="font-medium">340</span>
             </div>
 
-            <div className='h-28 w-28 bg-red-400 rounded-full' />
+            <div className="h-28 w-28 rounded-full bg-red-400" />
 
-            <div className='flex flex-col justify-between items-end'>
-              <span className='text-sm text-gray-500'>Spent</span>
-              <span className='font-medium'>$2,310</span>
+            <div className="flex flex-col items-end justify-between">
+              <span className="text-sm text-gray-500">Spent</span>
+              <span className="font-medium">$2,310</span>
             </div>
           </div>
 
-          <div className='relative flex flex-col items-center -mt-16'>
-            <span className='font-bold text-2xl'>Tony Molloy</span>
-            <span className='text-gray-500'>America</span>
+          <div className="relative -mt-16 flex flex-col items-center">
+            <span className="text-2xl font-bold">Tenacious Novel</span>
+            <span className="text-gray-500">Canada, BC</span>
           </div>
         </div>
       </div>
 
-      <div className='bg-white p-10 rounded-2xl shadow-xl'>
-        <div className='flex mb-5 justify-between items-center'>
+      <div className="rounded-2xl bg-white p-10 shadow-xl">
+        <div className="mb-5 flex items-center justify-between">
           <span>⬅️</span>
           <div>
-            <span className='space-x-5'>⭐️ 4.9</span>
-            <span className='shadow-xl p-2 rounded-md'>💖</span>
+            <span className="space-x-5">⭐️ 4.9</span>
+            <span className="rounded-md p-2 shadow-xl">💖</span>
           </div>
         </div>
 
-        <div className='bg-zinc-400 h-72 mb-5' />
-        <div className='flex flex-col'>
-          <span className='font-medium text-xl'>Swoon Launge</span>
-          <span className='text-xs text-gray-500'>Chair</span>
-          <div className='mt-3 mb-5 flex justify-between items-center'>
-            <div className='flex items-center'>
-              <input type="radio" />
-              <input type="radio" />
-              <input type="radio" />
+        <div className="mb-5 h-72 bg-zinc-400" />
+        <div className="flex flex-col">
+          <span className="text-xl font-medium">Swoon Launge</span>
+          <span className="text-xs text-gray-500">Chair</span>
+          <div className="mt-3 mb-5 flex items-center justify-between">
+            <div className="space-x-2">
+              <button className="h-5 w-5 rounded-full bg-yellow-500"></button>
+              <button className="h-5 w-5 rounded-full bg-indigo-500"></button>
+              <button className="h-5 w-5 rounded-full bg-teal-500"></button>
             </div>
-            <div className='flex items-center space-x-4'>
-              <button className='bg-blue-200 flex justify-center items-center aspect-square w-8 font-medium text-xl text-gray-500 shadow-xl rounded-xl'>-</button>
+            <div className="flex items-center space-x-4">
+              <button className="flex aspect-square w-8 items-center justify-center rounded-xl bg-blue-200 text-xl font-medium text-gray-500 shadow-xl">
+                -
+              </button>
               <span>1</span>
-              <button className='bg-blue-200 flex justify-center items-center aspect-square w-8 font-medium text-xl text-gray-500 shadow-xl rounded-xl'>+</button>
+              <button className="flex aspect-square w-8 items-center justify-center rounded-xl bg-blue-200 text-xl font-medium text-gray-500 shadow-xl">
+                +
+              </button>
             </div>
           </div>
-          <div className='flex justify-between items-center'>
-            <span className='font-bold text-2xl'>$450</span>
-            <button className='bg-blue-500 text-center py-2 px-8 text-xs rounded-xl shadow-xl text-white cursor-pointer'>Add to cart</button>
+          <div className="flex items-center justify-between">
+            <span className="text-2xl font-bold">$450</span>
+            <button className="cursor-pointer rounded-xl bg-blue-500 py-2 px-8 text-center text-xs text-white shadow-xl">
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 
