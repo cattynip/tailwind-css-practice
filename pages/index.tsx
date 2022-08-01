@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         </button>
       </div>
 
-      <div className="overflow-hidden rounded-2xl bg-white shadow-xl">
+      <div className="overflow-hidden rounded-2xl bg-white shadow-xl group">
         <div className="bg-blue-500 p-6 pb-14">
           <span className="text-2xl text-white">Profile</span>
         </div>
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
               <span className="font-medium">340</span>
             </div>
 
-            <div className="h-28 w-28 rounded-full bg-red-400" />
+            <div className="transition-colors h-28 w-28 rounded-full bg-gray-400 group-hover:bg-red-300" />
 
             <div className="flex flex-col items-end justify-between">
               <span className="text-sm text-gray-500">Spent</span>
