@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 const Home: NextPage = () => {
   return (
     <div className="grid min-h-screen gap-10 bg-slate-400 py-20 px-10">
-      <div className="flex flex-col rounded-3xl bg-white p-6 shadow-xl">
+      <div className="flex flex-col rounded-3xl bg-white p-6 shadow-xl sm:bg-red-400 sm:hover:bg-pink-200 md:bg-teal-500 lg:bg-indigo-500 xl:bg-yellow-400 2xl:bg-pink-500">
         <span className="text-3xl font-semibold">Select Item</span>
 
         <ul>
