@@ -15,7 +15,12 @@ const Details: NextPage = () => {
       </div>
 
       <div>
-        <ul className="list-disc marker:text-teal-500">
+        <ul className="list-decimal marker:text-teal-500">
+          <li>hi</li>
+          <li>hi</li>
+          <li>hi</li>
+        </ul>
+        <ul className="list-disc marker:text-red-900">
           <li>hi</li>
           <li>hi</li>
           <li>hi</li>

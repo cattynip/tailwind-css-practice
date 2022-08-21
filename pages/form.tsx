@@ -1,5 +1,9 @@
 import type { NextPage } from 'next';
 
+const x = 1
+
+console.log(x)
+
 const Forms: NextPage = () => {
   return (
     <div className="bg-blue-500 p-4">
