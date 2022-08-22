@@ -56,7 +56,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="relative -mt-16 flex flex-col items-center">
-            <span className="text-2xl font-bold">Tenacious Novel</span>
+            <span className="text-2xl font-bold">Craftzcat</span>
             <span className="text-gray-500">Canada, BC</span>
           </div>
         </div>
@@ -66,8 +66,8 @@ const Home: NextPage = () => {
         <div className="mb-5 flex items-center justify-between">
           <span>⬅️</span>
           <div>
-            <span className="space-x-5">⭐️ 4.9</span>
-            <span className="rounded-md p-2 shadow-xl">💖</span>
+            <span className="space-x-10">⭐️ 4.9</span>
+            <span className="rounded-md p-3 shadow-xl">💖</span>
           </div>
         </div>
 
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
           </div>
           <div className="flex items-center justify-between">
             <span className="text-2xl font-bold">$450</span>
-            <button className="cursor-pointer rounded-xl bg-blue-500 py-2 px-8 text-center text-xs text-white shadow-xl">
+            <button className="hover:translate-2 transitions cursor-pointer rounded-xl bg-blue-500 py-2 px-8 text-center text-xs text-white shadow-xl transition hover:translate-y-1 hover:bg-blue-700">
               Add to cart
             </button>
           </div>
